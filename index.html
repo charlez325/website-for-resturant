@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e6" />
+    <meta name="description" content="Sera is a neighborhood trattoria for handmade pasta, long dinners, and good company." />
+    <title>Sera — Handmade pasta, good company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Sera home">sera<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#menu">The menu</a>
+        <a href="#story">Our table</a>
+        <a href="#visit">Find us</a>
+        <a class="nav-book" href="#reserve">Book a table <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=2200&q=88" alt="Fresh handmade pasta finished with herbs and olive oil" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark"></span> A neighborhood trattoria</p>
+          <h1 id="hero-title">Good things<br />take <em>their time.</em></h1>
+          <p class="hero-description">Handmade pasta, the first pour of wine, one more story before you go. Pull up a chair.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#menu">See what's cooking <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#reserve">Save me a seat <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-caption"><span>Fresh pasta, rolled here every day</span><span>01 / 03</span></div>
+        <div class="hero-stamp" aria-hidden="true"><span>made slowly</span><span>eaten together</span><b>✳</b></div>
+      </section>
+
+      <div class="ticker" aria-label="Fresh pasta, open late, always room for one more">
+        <div class="ticker-track"><span>FRESH PASTA, EVERY DAY</span><i>✳</i><span>OPEN LATE, TAKE YOUR TIME</span><i>✳</i><span>ALWAYS ROOM FOR ONE MORE</span><i>✳</i><span>FRESH PASTA, EVERY DAY</span><i>✳</i></div>
+      </div>
+
+      <section class="menu-section section-pad" id="menu">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark">From our kitchen</p><h2>A little bit<br /><em>of everything.</em></h2></div>
+          <p class="section-intro">A menu that follows the season, the market, and whatever's looking especially good that morning.</p>
+        </div>
+        <div class="menu-controls" role="group" aria-label="Filter menu by course">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All the good stuff</button>
+          <button class="filter-button" type="button" data-filter="small" aria-pressed="false">To start</button>
+          <button class="filter-button" type="button" data-filter="pasta" aria-pressed="false">Pasta</button>
+          <button class="filter-button" type="button" data-filter="sweet" aria-pressed="false">Something sweet</button>
+        </div>
+        <div class="menu-grid" id="menu-grid">
+          <article class="menu-item" data-category="small"><div class="menu-item-top"><h3>Warm olives <span class="diet-mark">V</span></h3><span class="price">8</span></div><p>Orange peel, fennel seed, a little heat</p></article>
+          <article class="menu-item" data-category="small"><div class="menu-item-top"><h3>Burrata & stone fruit <span class="diet-mark">V</span></h3><span class="price">17</span></div><p>Whatever's ripe, basil, grilled sourdough</p></article>
+          <article class="menu-item" data-category="pasta"><div class="menu-item-top"><h3>Rigatoni alla vodka</h3><span class="price">24</span></div><p>Slow tomato, cream, parmesan, a little kick</p></article>
+          <article class="menu-item" data-category="pasta"><div class="menu-item-top"><h3>Brown butter ravioli</h3><span class="price">27</span></div><p>Ricotta, sage, hazelnut, crisp little edges</p></article>
+          <article class="menu-item" data-category="pasta"><div class="menu-item-top"><h3>Tagliatelle ragù</h3><span class="price">28</span></div><p>Beef, red wine, three hours on the stove</p></article>
+          <article class="menu-item" data-category="small"><div class="menu-item-top"><h3>Fried artichokes <span class="diet-mark">V</span></h3><span class="price">15</span></div><p>Lemon, pecorino, the good dipping sauce</p></article>
+          <article class="menu-item" data-category="sweet"><div class="menu-item-top"><h3>Olive oil cake <span class="diet-mark">V</span></h3><span class="price">12</span></div><p>Whipped mascarpone, seasonal fruit</p></article>
+          <article class="menu-item" data-category="sweet"><div class="menu-item-top"><h3>Tiramisu for two <span class="diet-mark">V</span></h3><span class="price">16</span></div><p>Espresso-soaked, cocoa-dusted, no sharing required</p></article>
+        </div>
+        <p class="menu-note">Our menu changes with the seasons. Please let us know about allergies when you visit.</p>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-image-wrap"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85" alt="A plate of fresh pasta ready to share" loading="lazy" /><span class="image-index">FROM FLOUR TO FORK, RIGHT HERE</span></div>
+        <div class="story-copy"><p class="eyebrow eyebrow-dark">A seat at our table</p><h2>Made by hand.<br />Made to <em>be shared.</em></h2><p>We believe dinner should feel like the best part of your day. So we make our pasta in-house, pour generously, and leave room for another plate in the middle.</p><p>Come for a quick bite. Stay until the candles get low. There's always a place for you here.</p><a class="underlined-link" href="#visit">A little more about us <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="reserve-section section-pad" id="reserve">
+        <div class="reserve-heading"><p class="eyebrow eyebrow-dark">Your table is waiting</p><h2>Make an evening<br /><em>of it.</em></h2><p>For tonight, next week, or that dinner you've been meaning to plan.</p></div>
+        <form class="reservation-form" id="reservation-form">
+          <label>Your name<input name="name" autocomplete="name" placeholder="First and last" required /></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+          <div class="form-row"><label>Date<input name="date" type="date" required /></label><label>Party size<select name="guests" required><option value="2">2 guests</option><option value="1">1 guest</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></label></div>
+          <label>Anything we should know? <span class="optional">Optional</span><textarea name="notes" rows="2" placeholder="Occasion, allergies, a favorite corner..."></textarea></label>
+          <button class="button button-dark" type="submit">Request a table <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="visit-section" id="visit">
+        <div class="visit-title"><p class="eyebrow">Come on in</p><h2>See you<br /><em>around dinner.</em></h2></div>
+        <div class="visit-details"><div><h3>Find us</h3><p>18 Orchard Street<br />Brooklyn, NY 11211</p><a href="https://maps.google.com/?q=18+Orchard+Street+Brooklyn+NY" target="_blank" rel="noreferrer">Get directions ↗</a></div><div><h3>When we're here</h3><p>Tue–Thu&nbsp; 5–10 pm<br />Fri–Sat&nbsp; 5–11 pm<br />Sunday&nbsp; 4–9 pm<br />Monday&nbsp; Taking a little rest</p></div><div><h3>Say hello</h3><p><a href="tel:+17185550184">(718) 555-0184</a><br /><a href="mailto:ciao@sera.example">ciao@sera.example</a></p><p class="fine-print">For groups of 7+, give us a call.</p></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark footer-wordmark" href="#top">sera<span>.</span></a><p>Good food. No rush. See you soon.</p><span>© 2026 Sera Trattoria</span><a class="back-top" href="#top" aria-label="Back to top">↑</a></footer>
+  </body>
+</html>
